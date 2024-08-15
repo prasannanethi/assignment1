@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: none;
+    box-sizing: border-box;
+    background-color: rgb(238, 231, 231);
+}
+
+header{
+    background-color: #847fc1;
+    color: white;
+    padding:none;
+
+    
+    display:flex;
+    align-items: center;
+    height:6rem;
+    position:fixed;
+    width:100%;
+    z-index:1000;
+}
+main {
+    padding: 20px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
+.logo-container {
+    position: absolute;
+    top: 1rem; /* Adjust as needed */
+    left: 2.5rem; /* Adjust as needed */
+}
+.image-container {
+    top:100px; /* Adjust as needed */
+    background-color: rgb(241, 140, 7);
+}
+.logo {
+    height: 50px; /* Adjust the size as needed */
+    width: auto; /* Automatically adjust width to maintain aspect ratio */
+    margin-right: 2.5rem;
+    border-radius: 50%; /* Make the image circular */
+    object-fit:cover;
+    align-items: center;
+    padding:0;
+}
+.image-container img{
+    height:fit-content;
+    width:100%;
+    
+}
+.logo-text{
+    font-size: 0.5rem; /* Make the text smaller */
+    color: rgba(247, 242, 242, 0.906); /* Set the text color */
+    margin-top: 0;
+    margin-bottom:0.4rem; /* Add some space between the image and the text */
+    text-align:left; /* Center-align the text */
+    left:5rem;
+    font-family:cursive
+}
+
+main {
+    padding: 1rem;
+    flex:1;
+    margin-bottom: 2rem;
+}
+.text-overlay {
+    top:400px;
+    left:100px;
+    font-size:50px;
+    font-family:cursive;
+    font-style:italic;
+    color:rgb(230, 120, 120);
+    position:absolute;
+    text-shadow:2px 2px 5px #bebcbc;
+}
+.about-section {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.top-nav {
+    position: fixed;
+    top: 1.5rem;
+    left:55rem;
+    margin-block-end: 0.5rem;
+    background-color: #847fc1;
+    color: white;
+    padding: 0.5rem;
+}
+
+.top-nav ul {
+    list-style: none;
+    padding: 0.5;
+    margin: 0.5;
+}
+
+.top-nav ul li {
+    display: inline;
+    padding-right:4rem;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position:static;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+

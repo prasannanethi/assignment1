@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo-container">
+                <img src="logo.png" alt="Logo" class="logo">
+                <p class="logo-text">Your Text Here</p>
+            </div>
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);" id="services-link">Services</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero-image">
+            <img src="hero.jpg" alt="Hero Image" class="full-width-image">
+        </div>
+
+        <main id="main-content">
+            <section id="about" class="about-section">
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Us</h2>
+                        <p>Welcome to the About Us section. Here you can find information about our company, mission, and values.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="about.jpg" alt="About Us Image">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <button id="dashboard-button">Go to Dashboard</button>
+            </section>
+        </main>
+        
+        <footer>
+            <p>&copy; 2024 Sample Website</p>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('dashboard-button').addEventListener('click', function() {
+            window.location.href = 'dashboard.html';
+        });
+
+        document.getElementById('services-link').addEventListener('click', function() {
+            document.getElementById('main-content').innerHTML = `
+                <section id="services" class="services-section">
+                    <h2>Our Services</h2>
+                    <p>Details about our services will be displayed here.</p>
+                </section>
+            `;
+        });
+    </script>
+</body>
+</html>
